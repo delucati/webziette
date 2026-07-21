@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIETTE | Software de Posmarketing para Promotoría</title>
+    <meta name="description" content="Soluciones de posmarketing con software de evidencias, check-in, formularios, ubicación y participación de mercado.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css?v=2">
+    <link rel="icon" type="image/png" href="img/ziette.png">
+</head>
+<body class="bg-ziette-cream font-body">
+
+    <!-- Navegación -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="img/ziette.png" alt="Ziette Logo" class="h-14">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ziette-gold font-medium border-b-2 border-ziette-gold">Inicio</a>
+                    <a href="#nosotros" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">Nosotros</a>
+                    <a href="sftracker.html" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">SFTRACKER</a>
+                    <a href="filosofia.html" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">Filosofía</a>
+                    <a href="contacto.html" class="btn-primary">Contáctanos</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-ziette-brown p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-ziette-gold font-medium">Inicio</a>
+                <a href="#nosotros" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Nosotros</a>
+                <a href="sftracker.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">SFTRACKER</a>
+                <a href="filosofia.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Filosofía</a>
+                <a href="contacto.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-ziette-brown via-ziette-brown-dark to-ziette-brown"></div>
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#D4A843" stroke-width="0.3"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <img src="img/ziette.png" alt="Ziette" class="h-24 md:h-32 mx-auto mb-6">
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white font-heading mb-6 leading-tight">
+                Potencia tu <span class="text-ziette-gold">Posmarketing</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 max-w-3xl mx-auto font-light">
+                Software integral para promotoría: evidencias, check-in, formularios, ubicación y participación de mercado
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="sftracker.html" class="btn-primary text-lg">Descubre SFTRACKER</a>
+                <a href="contacto.html" class="btn-secondary border-white text-white hover:bg-white hover:text-ziette-brown text-lg">Solicitar Demo</a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-ziette-gold font-semibold tracking-wider uppercase text-sm">Quiénes Somos</span>
+                <h2 class="section-title mt-3">Nosotros</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-ziette-brown font-heading">Líderes en Soluciones de Posmarketing</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        En <strong class="text-ziette-brown">Ziette</strong> nos especializamos en transformar la gestión de promotoría a través de tecnología innovadora. Nuestras soluciones están diseñadas para optimizar cada aspecto de tus operaciones en punto de venta.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Con más de una década de experiencia, hemos ayudado a cientos de empresas a mejorar su eficiencia operativa, reducir costos y maximizar el retorno de inversión en sus estrategias de marketing en campo.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 pt-6">
+                        <div class="text-center p-4 bg-ziette-cream rounded-xl">
+                            <div class="text-3xl font-bold text-ziette-gold font-heading">500+</div>
+                            <div class="text-sm text-gray-600 mt-1">Clientes Activos</div>
+                        </div>
+                        <div class="text-center p-4 bg-ziette-cream rounded-xl">
+                            <div class="text-3xl font-bold text-ziette-gold font-heading">15+</div>
+                            <div class="text-sm text-gray-600 mt-1">Años de Experiencia</div>
+                        </div>
+                        <div class="text-center p-4 bg-ziette-cream rounded-xl">
+                            <div class="text-3xl font-bold text-ziette-gold font-heading">98%</div>
+                            <div class="text-sm text-gray-600 mt-1">Satisfacción</div>
+                        </div>
+                        <div class="text-center p-4 bg-ziette-cream rounded-xl">
+                            <div class="text-3xl font-bold text-ziette-gold font-heading">24/7</div>
+                            <div class="text-sm text-gray-600 mt-1">Soporte Técnico</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-ziette-gold/20 to-ziette-beige rounded-3xl p-8">
+                        <img src="img/ziette.png" alt="Ziette Equipo" class="w-full h-auto opacity-80 mix-blend-multiply">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-ziette-gold rounded-2xl p-6 shadow-xl">
+                        <p class="text-white font-semibold">Excelencia en cada detalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SFTRACKER Preview -->
+    <section class="py-20 md:py-28 bg-gradient-to-b from-ziette-cream to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-ziette-gold font-semibold tracking-wider uppercase text-sm">Nuestra Plataforma</span>
+            <h2 class="section-title mt-3 mb-6">SFTRACKER</h2>
+            <p class="text-gray-600 mb-10 max-w-2xl mx-auto text-lg">
+                La plataforma todo-en-uno que revoluciona la gestión de tu promotoría con evidencias digitales, check-in inteligente, formularios dinámicos y más.
+            </p>
+            <a href="sftracker.html" class="btn-primary text-lg">Conoce todas las funcionalidades</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ziette-brown-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="img/ziette.png" alt="Ziette" class="h-12 mb-4">
+                    <p class="text-white/70 text-sm">Soluciones de posmarketing para promotoría y gestión de punto de venta.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Soluciones</h4>
+                    <ul class="space-y-2">
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Evidencias Digitales</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Check-in Inteligente</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Formularios Dinámicos</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Ubicación GPS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#nosotros" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Nosotros</a></li>
+                        <li><a href="filosofia.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Filosofía</a></li>
+                        <li><a href="contacto.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Privacidad</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center">
+                <p class="text-white/50 text-sm">&copy; 2026 Ziette. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

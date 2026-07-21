@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ziette-gold: #D4A843;
+  --color-ziette-gold-light: #E8C670;
+  --color-ziette-brown: #6B3A2A;
+  --color-ziette-brown-dark: #4A2818;
+  --color-ziette-cream: #FDF8F0;
+  --color-ziette-beige: #F5EDE0;
+  
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-primary {
+  @apply bg-ziette-gold hover:bg-ziette-gold-light text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+  @apply border-2 border-ziette-gold text-ziette-brown hover:bg-ziette-gold hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-ziette-brown;
+  font-family: var(--font-heading);
+}
+
+.card-hover {
+  @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300;
+}

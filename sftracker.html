@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFTRACKER | ZIETTE</title>
+    <meta name="description" content="Plataforma todo-en-uno para gestión de promotoría: evidencias, check-in, formularios, GPS y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css?v=2">
+    <link rel="icon" type="image/png" href="img/ziette.png">
+</head>
+<body class="bg-ziette-cream font-body">
+
+    <!-- Navegación -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="img/ziette.png" alt="Ziette Logo" class="h-14">
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">Inicio</a>
+                    <a href="index.html#nosotros" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">Nosotros</a>
+                    <a href="sftracker.html" class="text-ziette-gold font-medium border-b-2 border-ziette-gold">SFTRACKER</a>
+                    <a href="filosofia.html" class="text-ziette-brown hover:text-ziette-gold font-medium transition-colors">Filosofía</a>
+                    <a href="contacto.html" class="btn-primary">Contáctanos</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-ziette-brown p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Inicio</a>
+                <a href="index.html#nosotros" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Nosotros</a>
+                <a href="sftracker.html" class="block py-2 text-ziette-gold font-medium">SFTRACKER</a>
+                <a href="filosofia.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Filosofía</a>
+                <a href="contacto.html" class="block py-2 text-ziette-brown hover:text-ziette-gold font-medium">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero SFTRACKER -->
+    <section class="relative pt-48 pb-20 md:pt-56 md:pb-28 bg-gradient-to-br from-ziette-brown via-ziette-brown-dark to-ziette-brown">
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#D4A843" stroke-width="0.3"/>
+                    </pattern>
+                </defs>
+                <rect width="100" height="100" fill="url(#grid)"/>
+            </svg>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-ziette-gold font-semibold tracking-wider uppercase text-sm">Nuestra Plataforma</span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white font-heading mt-4 mb-6">SFTRACKER</h1>
+            <p class="text-xl text-white/90 max-w-3xl mx-auto">
+                La plataforma todo-en-uno que revoluciona la gestión de tu promotoría
+            </p>
+        </div>
+    </section>
+
+    <!-- Características SFTRACKER -->
+    <section class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Evidencias Digitales</h3>
+                    <p class="text-gray-600">Captura de fotos con geolocalización, timestamps automáticos y validación en tiempo real para cada actividad en campo.</p>
+                </div>
+
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Check-in Inteligente</h3>
+                    <p class="text-gray-600">Registro automático de entrada y salida con geocercas, control de horarios y monitoreo de asistencia en tiempo real.</p>
+                </div>
+
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Formularios Dinámicos</h3>
+                    <p class="text-gray-600">Diseña formularios personalizados para cada necesidad: auditorías, reportes, encuestas y más con sincronización automática.</p>
+                </div>
+
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Ubicación GPS</h3>
+                    <p class="text-gray-600">Rastreo en tiempo real de tu equipo en campo, rutas optimizadas y reportes de cobertura geográfica completa.</p>
+                </div>
+
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Participación de Mercado</h3>
+                    <p class="text-gray-600">Análisis de share of shelf, inventarios visuales, evaluación de competencia y métricas de impacto en punto de venta.</p>
+                </div>
+
+                <div class="card-hover p-8">
+                    <div class="w-14 h-14 bg-ziette-gold/10 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-ziette-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-ziette-brown mb-3 font-heading">Dashboard Analítico</h3>
+                    <p class="text-gray-600">Reportes avanzados, KPIs en tiempo real, gráficas interactivas y exportación de datos para la toma de decisiones.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <a href="contacto.html" class="btn-primary text-lg">Solicitar Demo Gratuita</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ziette-brown-dark py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="img/ziette.png" alt="Ziette" class="h-12 mb-4">
+                    <p class="text-white/70 text-sm">Soluciones de posmarketing para promotoría y gestión de punto de venta.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Soluciones</h4>
+                    <ul class="space-y-2">
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Evidencias Digitales</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Check-in Inteligente</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Formularios Dinámicos</a></li>
+                        <li><a href="sftracker.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Ubicación GPS</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Empresa</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#nosotros" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Nosotros</a></li>
+                        <li><a href="filosofia.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Filosofía</a></li>
+                        <li><a href="contacto.html" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-heading">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Privacidad</a></li>
+                        <li><a href="#" class="text-white/70 hover:text-ziette-gold transition-colors text-sm">Términos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-8 pt-8 text-center">
+                <p class="text-white/50 text-sm">&copy; 2026 Ziette. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

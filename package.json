@@ -1,0 +1,26 @@
+{
+  "name": "webziette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./css/styles.css -o ./css/output.css --minify",
+    "watch": "tailwindcss -i ./css/styles.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delucati/webziette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/delucati/webziette/issues"
+  },
+  "homepage": "https://github.com/delucati/webziette#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
